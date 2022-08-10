@@ -1,7 +1,7 @@
 from pytube import YouTube
 from sys import argv
 
-#passing video link as the parameter
+#pass video link as the parameter
 link = argv[1]
 video = YouTube(link)
 
@@ -9,11 +9,11 @@ video = YouTube(link)
 print("Title: ", video.title)
 print("Views: ", video.views)
 
-#for those of us with third world country internet speeds
+#for third world country internet speeds
 potato_internet = video.streams.filter(res='480p')
 
 #file path to save your videos
-potato_internet.download('/Users/tahirashaukat/Downloads')
+potato_internet.download('/path/for/your/downloads')
 
 
 
