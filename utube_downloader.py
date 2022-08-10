@@ -9,14 +9,8 @@ video = YouTube(link)
 print("Title: ", video.title)
 print("Views: ", video.views)
 
-#for third world country internet speeds
+#for slow internet speeds
 potato_internet = video.streams.filter(res='480p')
 
 #file path to save your videos
 potato_internet.download('/path/for/your/downloads')
-
-
-
-
-
-
